@@ -1,0 +1,8 @@
+{
+  "name": "through-json",
+  "version": "0.0.0",
+  "description": "Through2 stream that parses json messages",
+  "dependencies": {
+    "through2": "^0.4.1"
+  }
+}
