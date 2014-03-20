@@ -1,7 +1,15 @@
 {
   "name": "through-json",
   "version": "0.0.0",
-  "description": "Through2 stream that parses json messages",
+  "description": "Through stream that parses each write as a JSON message.",
+  "repository": "git://github.com/mafintosh/through-json.git",
+  "keywords": [
+  	"stream",
+  	"streams2",
+  	"through",
+  	"json",
+  	"parse"
+  ],
   "dependencies": {
     "through2": "^0.4.1"
   },
