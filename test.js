@@ -1,5 +1,5 @@
 var test = require('tap').test;
-var parse = require('through-json');
+var parse = require('./');
 
 test('parse 1 message', function(t) {
 	t.plan(1);
