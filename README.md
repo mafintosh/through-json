@@ -4,6 +4,8 @@ Through stream that parses each write as a JSON message.
 
 	npm install through-json
 
+[![build status](https://secure.travis-ci.org/mafintosh/through-json.png)](http://travis-ci.org/mafintosh/through-json)
+
 ## Usage
 
 ``` js
