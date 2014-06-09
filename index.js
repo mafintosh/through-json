@@ -11,7 +11,7 @@ var parse = function(str) {
 module.exports = function(format) {
 	return through.obj(function(data, enc, cb) {
 		var parsed = parse(data.toString());
-		if (format) parsed = format(parsed)
+		if (parsed && format) parsed = format(parsed)
 		if (parsed) return cb(null, parsed);
 		cb();
 	});
