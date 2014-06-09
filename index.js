@@ -8,13 +8,11 @@ var parse = function(str) {
 	}
 };
 
-module.exports = function(fn) {
-	var p = through({objectMode:true}, function(data, enc, cb) {
+module.exports = function(format) {
+	return through.obj(function(data, enc, cb) {
 		var parsed = parse(data.toString());
+		if (format) parsed = format(parsed)
 		if (parsed) return cb(null, parsed);
 		cb();
 	});
-
-	p.on('data', fn);
-	return p;
 };
