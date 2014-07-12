@@ -1,6 +1,6 @@
 {
   "name": "through-json",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Through stream that parses each write as a JSON message.",
   "repository": "git://github.com/mafintosh/through-json.git",
   "keywords": [
